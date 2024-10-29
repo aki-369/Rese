@@ -1,0 +1,59 @@
+.login-container {
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: white;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.main-ttl {
+    background-color: #4285f4;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    /* labelとinputを中央揃え */
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+
+.form-group label {
+    width: 50px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-size: 14px;
+}
+
+.btn-container {
+    text-align: right;
+    padding: 15px;
+}
+
+.btn {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #357ae8;
+}

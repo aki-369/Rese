@@ -1,0 +1,149 @@
+.mypage-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.user-name {
+    text-align: center;
+}
+
+.reservation-group,
+.favorite-group {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.reservation-group {
+    flex: 1;
+    margin-left: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.reservtion-ttl,
+.favorite-ttl {
+    margin-bottom: 10px;
+}
+
+.reservation-item,
+.favorite-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.reservation-item {
+    background-color: #007bff;
+    color: white;
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    color: #ff6b6b;
+}
+
+.reservation-item p {
+    margin: 5px 0;
+}
+
+.reservation-item .label {
+    display: inline-block;
+    width: 80px;
+}
+
+.reservation-item .value {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.favorite-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.favorite-ttl {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.favorite-item {
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+}
+
+.shop-card {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+.card-img-top {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    background-color: white;
+}
+
+.card-title {
+    margin-bottom: 0;
+}
+
+.card-text {
+    margin-top: 0;
+    display: inline-block;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    display: block;
+    width: 50%;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.favorite-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ccc;
+}
