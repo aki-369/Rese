@@ -16,7 +16,7 @@ class FavoriteController extends Controller
     {
     // ユーザーがログインしているかチェック
     if (!Auth::check()) {
-        return redirect()->route('login'); // または適切なリダイレクト先
+        return redirect()->route('login');
     }
 
     $user = Auth::user();

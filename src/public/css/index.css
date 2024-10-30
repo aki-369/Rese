@@ -85,3 +85,26 @@
     font-size: 24px;
     color: #ccc;
 }
+
+@media (max-width: 768px) {
+
+    .search-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .form-select,
+    .form-control {
+        width: 100%;
+    }
+
+    .shop-container {
+        justify-content: center;
+    }
+
+    .shop-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

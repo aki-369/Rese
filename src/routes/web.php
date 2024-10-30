@@ -16,18 +16,17 @@ Route::post('/login', [UserController::class, 'login']);
 
 Route::get('/mypage', [UserController::class, 'showMypage'])->name('mypage')->middleware('auth');
 
-Route::get('/', [ShopController::class, 'index'])->name('shops.index'); // 飲食店一覧
-Route::get('/detail/{id}', [ShopController::class, 'showDetailForm'])->name('shops.detail'); // 飲食店詳細
+Route::get('/', [ShopController::class, 'index'])->name('shops.index');
+Route::get('/detail/{id}', [ShopController::class, 'showDetailForm'])->name('shops.detail');
 
-Route::get('/shops/search', [ShopController::class, 'search'])->name('shops.search'); // 検索機能
-
+Route::get('/shops/search', [ShopController::class, 'search'])->name('shops.search'); 
 
 Route::post('/favorites/{shop}/toggle', [FavoriteController::class, 'toggle'])->name('favorites.toggle');
 
 Route::post('/reservations/{shop_id}/confirm', [ReservationController::class, 'confirm'])->name('shops.reservation.confirm');
-Route::post('/reservations/{shop_id}/add', [ReservationController::class, 'addReservation'])->name('shops.reservation.add'); // 予約追加
-Route::delete('/reservations/{id}', [ReservationController::class, 'delete'])->name('reservations.delete');// 予約削除
+Route::post('/reservations/{shop_id}/add', [ReservationController::class, 'addReservation'])->name('shops.reservation.add'); 
+Route::delete('/reservations/{id}', [ReservationController::class, 'delete'])->name('reservations.delete');
 Route::get('/done', function() {
     return view('shops.done');
-})->name('shops.reservation.done'); // 予約完了ページ
+})->name('shops.reservation.done'); 
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\AuthRequest;
 use App\Models\User;
 use App\Models\Shop;
 use App\Models\Area;
@@ -14,7 +15,6 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-
     //　会員登録ページ表示
     public function showRegisterForm()
     {
@@ -51,7 +51,7 @@ class UserController extends Controller
     }
 
     // ログイン処理
-    public function login(Request $request)
+    public function login(AuthRequest $request)
     {
         $credentials = $request->validate([
             'email' => 'required|email',
@@ -70,6 +70,7 @@ class UserController extends Controller
         ]);
     }
 
+    // マイページの表示
     public function showMypage()
     {
         $user = Auth::user();

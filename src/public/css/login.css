@@ -57,3 +57,42 @@
 .btn:hover {
     background-color: #357ae8;
 }
+
+@media (max-width: 768px) {
+
+    .login-container {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .main-ttl {
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10px;
+    }
+
+    .form-group label {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .form-group input {
+        width: 100%;
+    }
+
+    .btn-container {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px 0;
+    }
+}

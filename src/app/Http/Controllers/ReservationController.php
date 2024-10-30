@@ -8,6 +8,7 @@ use App\Models\Genre;
 use App\Models\Favorite;
 use App\Models\Reservation;
 use Illuminate\Http\Request;
+use App\Http\Requests\ReservationRequest;
 use Illuminate\Support\Facades\Auth;
 
 class ReservationController extends Controller
@@ -25,11 +26,10 @@ class ReservationController extends Controller
         // セッションに一時的にデータを保存
         session()->flash('confirmation', $confirmationData);
 
-        // 同じページにリダイレクト
         return redirect()->back();
     }
 
-    public function addReservation(Request $request)
+    public function addReservation(ReservationRequest $request)
     {
 
         // 予約日時を結合

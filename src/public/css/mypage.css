@@ -147,3 +147,27 @@
     font-size: 24px;
     color: #ccc;
 }
+
+@media (max-width: 768px) {
+
+    .mypage-container {
+        flex-direction: column;
+    }
+
+    .reservation-group,
+    .favorite-group {
+        width: 100%;
+    }
+
+    .favorite-item {
+        width: 100%;
+    }
+
+    .reservation-item {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
